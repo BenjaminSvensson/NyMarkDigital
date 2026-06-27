@@ -25,102 +25,89 @@
     </header>
 
     <main>
-      <section class="hero" aria-labelledby="hero-title">
-        <div class="hero-copy">
+      <section class="workspace" aria-labelledby="hero-title">
+        <div class="intro-panel">
           <p class="eyebrow">Hemsidor för företag som vill bli valda</p>
           <h1 id="hero-title"><span>NyMark</span><span>Digital</span></h1>
           <p>
-            Vi designar och bygger hemsidor som är enkla att förstå, snabba att
-            använda och tydliga nog för att göra jobbet direkt.
+            Vi bygger tydliga hemsidor med en portföljkänsla som gör det lätt
+            att se stil, kvalitet och resultat direkt.
           </p>
-          <a class="primary-link" href="#portfolio">Se portföljen</a>
-        </div>
-        <div class="hero-mark" aria-hidden="true">
-          <img src="assets/nymarkdigital-logo.png" alt="" />
-        </div>
-      </section>
-
-      <section class="portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
-        <div class="section-heading">
-          <span>01</span>
-          <div>
-            <h2 id="portfolio-title">Portfolio</h2>
-            <p>
-              Klicka på ett exempel för att öppna hemsidan direkt. Exemplen kan
-              ligga inne i NyMarkDigital eller peka vidare till en extern kundsida.
-            </p>
+          <div class="intro-actions">
+            <a class="primary-link" href="mailto:kontakt@nymarkdigital.se">Starta projekt</a>
+            <a class="secondary-link" href="#portfolio">Se exempel</a>
           </div>
         </div>
 
-        <div class="portfolio-toolbar" aria-label="Filtrera portfoljen">
-          <button class="filter-button is-active" type="button" data-filter="all">Alla</button>
-          <button class="filter-button" type="button" data-filter="restaurang">Restaurang</button>
-          <button class="filter-button" type="button" data-filter="tjanst">Tjänst</button>
-          <button class="filter-button" type="button" data-filter="vard">Vård</button>
-        </div>
+        <section class="portfolio-panel" id="portfolio" aria-labelledby="portfolio-title">
+          <div class="panel-header">
+            <div>
+              <span>Portfolio</span>
+              <h2 id="portfolio-title">Öppna ett exempel direkt</h2>
+            </div>
+            <p>Interna exempel kan ligga på NyMarkDigital. Externa kundsidor kan länkas in på samma sätt.</p>
+          </div>
 
-        <div class="portfolio-grid">
-          <a class="work-card" href="examples/nordic-cafe/index.html" data-category="restaurang">
-            <span class="work-thumb thumb-cafe" aria-hidden="true">
-              <span class="browser-bar"></span>
-              <span class="thumb-line wide"></span>
-              <span class="thumb-line"></span>
-              <span class="thumb-row">
-                <span></span>
-                <span></span>
-                <span></span>
+          <div class="portfolio-grid">
+            <a class="work-card" href="examples/nordic-cafe/index.html">
+              <span class="work-thumb thumb-cafe" aria-hidden="true">
+                <span class="browser-bar"></span>
+                <span class="thumb-line wide"></span>
+                <span class="thumb-line"></span>
+                <span class="thumb-row">
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                </span>
               </span>
-            </span>
-            <span class="work-meta">
-              <span>
-                <strong>Nordic Cafe</strong>
-                <small>Internt restaurangexempel</small>
+              <span class="work-meta">
+                <span>
+                  <strong>Nordic Cafe</strong>
+                  <small>Internt restaurangexempel</small>
+                </span>
+                <span class="work-type">Öppna</span>
               </span>
-              <span class="work-type">Öppna</span>
-            </span>
-          </a>
+            </a>
 
-          <a class="work-card" href="examples/studio-grid/index.html" data-category="tjanst">
-            <span class="work-thumb thumb-studio" aria-hidden="true">
-              <span class="browser-bar"></span>
-              <span class="poster-block"></span>
-              <span class="thumb-line wide"></span>
-              <span class="thumb-line"></span>
-            </span>
-            <span class="work-meta">
-              <span>
-                <strong>Studio Grid</strong>
-                <small>Internt tjänsteexempel</small>
+            <a class="work-card" href="examples/studio-grid/index.html">
+              <span class="work-thumb thumb-studio" aria-hidden="true">
+                <span class="browser-bar"></span>
+                <span class="poster-block"></span>
+                <span class="thumb-line wide"></span>
+                <span class="thumb-line"></span>
               </span>
-              <span class="work-type">Öppna</span>
-            </span>
-          </a>
+              <span class="work-meta">
+                <span>
+                  <strong>Studio Grid</strong>
+                  <small>Internt tjänsteexempel</small>
+                </span>
+                <span class="work-type">Öppna</span>
+              </span>
+            </a>
 
-          <a class="work-card" href="examples/tandvard-plus/index.html" data-category="vard">
-            <span class="work-thumb thumb-care" aria-hidden="true">
-              <span class="browser-bar"></span>
-              <span class="split-panel"></span>
-              <span class="thumb-line wide"></span>
-              <span class="thumb-line"></span>
-            </span>
-            <span class="work-meta">
-              <span>
-                <strong>Tandvård Plus</strong>
-                <small>Internt vårdexempel</small>
+            <a class="work-card" href="examples/tandvard-plus/index.html">
+              <span class="work-thumb thumb-care" aria-hidden="true">
+                <span class="browser-bar"></span>
+                <span class="split-panel"></span>
+                <span class="thumb-line wide"></span>
+                <span class="thumb-line"></span>
               </span>
-              <span class="work-type">Öppna</span>
-            </span>
-          </a>
-        </div>
+              <span class="work-meta">
+                <span>
+                  <strong>Tandvård Plus</strong>
+                  <small>Internt vårdexempel</small>
+                </span>
+                <span class="work-type">Öppna</span>
+              </span>
+            </a>
+          </div>
+        </section>
       </section>
 
       <section class="process-section" id="process" aria-labelledby="process-title">
         <div class="section-heading">
-          <span>02</span>
-          <div>
-            <h2 id="process-title">Process</h2>
-            <p>En tydlig väg från första idé till publicerad hemsida.</p>
-          </div>
+          <span>Process</span>
+          <h2 id="process-title">En tydlig väg från första idé till publicerad hemsida.</h2>
         </div>
         <div class="process-grid">
           <article>
@@ -143,7 +130,7 @@
 
       <section class="contact-section" id="kontakt" aria-labelledby="contact-title">
         <div>
-          <span>03</span>
+          <span>Kontakt</span>
           <h2 id="contact-title">Redo för en hemsida som känns enkel att välja?</h2>
         </div>
         <a class="primary-link" href="mailto:kontakt@nymarkdigital.se">kontakt@nymarkdigital.se</a>
@@ -155,6 +142,5 @@
       <span>Hemsidor, portfolio och digital närvaro</span>
     </footer>
 
-    <script src="script.js"></script>
   </body>
 </html>
