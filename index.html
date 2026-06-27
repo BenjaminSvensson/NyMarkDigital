@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="sv">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>NyMarkDigital | Hemsidor med portfolio i fokus</title>
+    <meta
+      name="description"
+      content="NyMarkDigital bygger rena, snabba och användarvänliga hemsidor. Utforska portföljen och öppna exempel direkt."
+    />
+    <link rel="icon" href="assets/nymarkdigital-logo.png" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html" aria-label="NyMarkDigital startsida">
+        <img src="assets/nymarkdigital-logo.png" alt="NyMarkDigital logotyp" />
+        <span>NyMarkDigital</span>
+      </a>
+      <nav class="site-nav" aria-label="Huvudmeny">
+        <a href="#portfolio">Portfolio</a>
+        <a href="#process">Process</a>
+        <a href="#kontakt">Kontakt</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow">Hemsidor för företag som vill bli valda</p>
+          <h1 id="hero-title"><span>NyMark</span><span>Digital</span></h1>
+          <p>
+            Vi designar och bygger hemsidor som är enkla att förstå, snabba att
+            använda och tydliga nog för att göra jobbet direkt.
+          </p>
+          <a class="primary-link" href="#portfolio">Se portföljen</a>
+        </div>
+        <div class="hero-mark" aria-hidden="true">
+          <img src="assets/nymarkdigital-logo.png" alt="" />
+        </div>
+      </section>
+
+      <section class="portfolio-section" id="portfolio" aria-labelledby="portfolio-title">
+        <div class="section-heading">
+          <span>01</span>
+          <div>
+            <h2 id="portfolio-title">Portfolio</h2>
+            <p>
+              Klicka på ett exempel för att öppna hemsidan direkt. Exemplen kan
+              ligga inne i NyMarkDigital eller peka vidare till en extern kundsida.
+            </p>
+          </div>
+        </div>
+
+        <div class="portfolio-toolbar" aria-label="Filtrera portfoljen">
+          <button class="filter-button is-active" type="button" data-filter="all">Alla</button>
+          <button class="filter-button" type="button" data-filter="restaurang">Restaurang</button>
+          <button class="filter-button" type="button" data-filter="tjanst">Tjänst</button>
+          <button class="filter-button" type="button" data-filter="vard">Vård</button>
+        </div>
+
+        <div class="portfolio-grid">
+          <a class="work-card" href="examples/nordic-cafe/index.html" data-category="restaurang">
+            <span class="work-thumb thumb-cafe" aria-hidden="true">
+              <span class="browser-bar"></span>
+              <span class="thumb-line wide"></span>
+              <span class="thumb-line"></span>
+              <span class="thumb-row">
+                <span></span>
+                <span></span>
+                <span></span>
+              </span>
+            </span>
+            <span class="work-meta">
+              <span>
+                <strong>Nordic Cafe</strong>
+                <small>Internt restaurangexempel</small>
+              </span>
+              <span class="work-type">Öppna</span>
+            </span>
+          </a>
+
+          <a class="work-card" href="examples/studio-grid/index.html" data-category="tjanst">
+            <span class="work-thumb thumb-studio" aria-hidden="true">
+              <span class="browser-bar"></span>
+              <span class="poster-block"></span>
+              <span class="thumb-line wide"></span>
+              <span class="thumb-line"></span>
+            </span>
+            <span class="work-meta">
+              <span>
+                <strong>Studio Grid</strong>
+                <small>Internt tjänsteexempel</small>
+              </span>
+              <span class="work-type">Öppna</span>
+            </span>
+          </a>
+
+          <a class="work-card" href="examples/tandvard-plus/index.html" data-category="vard">
+            <span class="work-thumb thumb-care" aria-hidden="true">
+              <span class="browser-bar"></span>
+              <span class="split-panel"></span>
+              <span class="thumb-line wide"></span>
+              <span class="thumb-line"></span>
+            </span>
+            <span class="work-meta">
+              <span>
+                <strong>Tandvård Plus</strong>
+                <small>Internt vårdexempel</small>
+              </span>
+              <span class="work-type">Öppna</span>
+            </span>
+          </a>
+        </div>
+      </section>
+
+      <section class="process-section" id="process" aria-labelledby="process-title">
+        <div class="section-heading">
+          <span>02</span>
+          <div>
+            <h2 id="process-title">Process</h2>
+            <p>En tydlig väg från första idé till publicerad hemsida.</p>
+          </div>
+        </div>
+        <div class="process-grid">
+          <article>
+            <span>1</span>
+            <h3>Riktning</h3>
+            <p>Vi sätter mål, målgrupp, sidor och vilket intryck hemsidan ska ge.</p>
+          </article>
+          <article>
+            <span>2</span>
+            <h3>Design</h3>
+            <p>Vi bygger en ren struktur med tydliga sektioner, texter och bilder.</p>
+          </article>
+          <article>
+            <span>3</span>
+            <h3>Publicering</h3>
+            <p>Hemsidan testas, publiceras och kan uppdateras när portföljen växer.</p>
+          </article>
+        </div>
+      </section>
+
+      <section class="contact-section" id="kontakt" aria-labelledby="contact-title">
+        <div>
+          <span>03</span>
+          <h2 id="contact-title">Redo för en hemsida som känns enkel att välja?</h2>
+        </div>
+        <a class="primary-link" href="mailto:kontakt@nymarkdigital.se">kontakt@nymarkdigital.se</a>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <span>NyMarkDigital</span>
+      <span>Hemsidor, portfolio och digital närvaro</span>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

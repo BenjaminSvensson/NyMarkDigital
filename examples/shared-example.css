@@ -1,0 +1,130 @@
+:root {
+  --ink: #0a0a0a;
+  --line: #d8dbe2;
+  --blue: #002fa7;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  line-height: 1.45;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 20px 28px;
+  border-bottom: 1px solid var(--line);
+  background: #ffffff;
+}
+
+header a {
+  color: var(--blue);
+  font-weight: 700;
+}
+
+main {
+  min-height: calc(100vh - 66px);
+}
+
+.example-hero {
+  display: grid;
+  align-content: center;
+  min-height: 62vh;
+  padding: 56px 28px;
+  border-bottom: 1px solid var(--line);
+}
+
+.example-hero p {
+  margin: 0 0 14px;
+  color: var(--blue);
+  font-weight: 700;
+}
+
+.example-hero h1 {
+  max-width: 900px;
+  margin: 0 0 28px;
+  font-size: clamp(44px, 9vw, 104px);
+  line-height: 0.96;
+  letter-spacing: 0;
+}
+
+.example-hero a {
+  display: inline-flex;
+  width: fit-content;
+  min-height: 46px;
+  align-items: center;
+  padding: 0 18px;
+  background: var(--blue);
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.example-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1px;
+  background: var(--line);
+}
+
+.example-grid article {
+  min-height: 220px;
+  padding: 28px;
+  background: #ffffff;
+}
+
+.example-grid h2 {
+  margin: 0 0 10px;
+  font-size: 34px;
+}
+
+.example-grid p {
+  max-width: 520px;
+  margin: 0;
+  color: #60636b;
+  font-size: 18px;
+}
+
+.cafe .example-hero {
+  background: #f7f7f8;
+}
+
+.studio .example-hero {
+  background:
+    linear-gradient(90deg, transparent 49.8%, var(--line) 50%, transparent 50.2%),
+    #ffffff;
+}
+
+.care .example-hero {
+  background: #edf2ff;
+}
+
+@media (max-width: 720px) {
+  header,
+  .example-grid {
+    grid-template-columns: 1fr;
+  }
+
+  header {
+    flex-direction: column;
+  }
+
+  .example-grid {
+    display: block;
+  }
+
+  .example-grid article {
+    border-bottom: 1px solid var(--line);
+  }
+}
